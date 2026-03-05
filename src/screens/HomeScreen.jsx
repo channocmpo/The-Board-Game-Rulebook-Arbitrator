@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Container,
   Row,
@@ -12,6 +13,7 @@ import {
 
 function HomeScreen() {
   const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
 
   const popularGames = [
     { id: 1, name: "Chess", category: "Classic" },
@@ -24,14 +26,15 @@ function HomeScreen() {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    // Add search logic here
-    console.log("Searching for:", searchQuery);
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
+    }
   };
 
   return (
     <div>
       {/* Hero Section */}
-      <div className="bg-primary text-white py-5">
+      <div className="hero-section text-white py-5">
         <Container>
           <Row className="justify-content-center text-center">
             <Col lg={8}>
@@ -98,8 +101,8 @@ function HomeScreen() {
           <Col lg={4} className="mb-4">
             <Card className="text-center h-100 border-0">
               <Card.Body>
-                <div className="mb-3">
-                  <h2>📚</h2>
+                <div className="mb-3 feature-icon">
+                  <h3>Comprehensive Rules</h3>
                 </div>
                 <Card.Title>Comprehensive Rules</Card.Title>
                 <Card.Text>
@@ -112,8 +115,8 @@ function HomeScreen() {
           <Col lg={4} className="mb-4">
             <Card className="text-center h-100 border-0">
               <Card.Body>
-                <div className="mb-3">
-                  <h2>🎯</h2>
+                <div className="mb-3 feature-icon">
+                  <h3>Win Conditions</h3>
                 </div>
                 <Card.Title>Win Conditions</Card.Title>
                 <Card.Text>
@@ -126,8 +129,8 @@ function HomeScreen() {
           <Col lg={4} className="mb-4">
             <Card className="text-center h-100 border-0">
               <Card.Body>
-                <div className="mb-3">
-                  <h2>⚖️</h2>
+                <div className="mb-3 feature-icon">
+                  <h3>Rule Arbitration</h3>
                 </div>
                 <Card.Title>Rule Arbitration</Card.Title>
                 <Card.Text>

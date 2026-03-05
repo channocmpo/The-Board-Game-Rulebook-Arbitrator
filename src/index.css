@@ -1,18 +1,24 @@
 /* Global ChatGPT Theme Overrides */
 body {
-  background-color: #343541 !important;
+  background-color: #0d0d0d !important;
   color: #ECECF1 !important;
 }
 
 main {
   min-height: 80vh;
-  background-color: #343541;
+  background-color: #0d0d0d;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #1a1a1a !important;
+  border-bottom: 1px solid #2d2d2d;
 }
 
 /* Bootstrap Component Overrides for ChatGPT Theme */
 .navbar {
-  background-color: #202123 !important;
-  border-bottom: 1px solid #565869;
+  background-color: #0d0d0d !important;
+  border-bottom: 1px solid #2d2d2d;
 }
 
 .navbar-brand,
@@ -21,16 +27,16 @@ main {
 }
 
 .nav-link:hover {
-  color: #10A37F !important;
+  color: #8E8EA0 !important;
 }
 
 .bg-primary {
-  background-color: #444654 !important;
+  background-color: #1a1a1a !important;
 }
 
 .card {
-  background-color: #444654 !important;
-  border: 1px solid #565869 !important;
+  background-color: #1a1a1a !important;
+  border: 1px solid #2d2d2d !important;
   color: #ECECF1 !important;
 }
 
@@ -43,41 +49,43 @@ main {
 }
 
 .btn-primary {
-  background-color: #10A37F !important;
-  border-color: #10A37F !important;
-  color: white !important;
-}
-
-.btn-primary:hover,
-.btn-primary:focus {
-  background-color: #0D8B6E !important;
-  border-color: #0D8B6E !important;
-}
-
-.btn-light {
-  background-color: #40414F !important;
+  background-color: #565869 !important;
   border-color: #565869 !important;
   color: #ECECF1 !important;
 }
 
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #6d6d7d !important;
+  border-color: #6d6d7d !important;
+  color: #ECECF1 !important;
+}
+
+.btn-light {
+  background-color: #2d2d2d !important;
+  border-color: #3d3d3d !important;
+  color: #ECECF1 !important;
+}
+
 .btn-light:hover {
-  background-color: #565869 !important;
+  background-color: #3d3d3d !important;
   color: #ECECF1 !important;
 }
 
 .btn-outline-success {
-  border-color: #10A37F !important;
-  color: #10A37F !important;
+  background-color: #2d2d2d !important;
+  color: #ECECF1 !important;
 }
 
 .btn-outline-success:hover {
-  background-color: #10A37F !important;
-  color: white !important;
+  background-color: #2d2d2d !important;
+  color: #ECECF1 !important;
+  border-color: #565869 !important;
 }
 
 .form-control {
-  background-color: #40414F !important;
-  border: 1px solid #565869 !important;
+  background-color: #2d2d2d !important;
+  border: 1px solid #3d3d3d !important;
   color: #ECECF1 !important;
 }
 
@@ -86,13 +94,18 @@ main {
 }
 
 .form-control:focus {
-  background-color: #40414F !important;
-  border-color: #10A37F !important;
+  background-color: #2d2d2d !important;
+  border-color: #565869 !important;
   color: #ECECF1 !important;
   box-shadow: 0 0 0 0.2rem rgba(16, 163, 127, 0.25) !important;
 }
 
-.badge {
+/* Feature Icons */
+.feature-icon {
+  color: #8E8EA0;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   background-color: #565869 !important;
   color: #ECECF1 !important;
 }

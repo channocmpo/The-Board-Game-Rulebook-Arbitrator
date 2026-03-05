@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -8,6 +8,16 @@ import Navbar from "react-bootstrap/Navbar";
 import { Container } from "react-bootstrap";
 
 function Header() {
+  const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${encodeURIComponent(searchQuery)}`);
+      setSearchQuery("");
+    }
+  };
   return (
     <header>
       <Navbar expand="lg" bg="primary" variant="dark" collapseOnSelect>
@@ -32,14 +42,16 @@ function Header() {
                 Register
               </Nav.Link>
             </Nav>
-            <Form className="d-flex">
+            <Form className="d-flex" onSubmit={handleSearch}>
               <Form.Control
                 type="search"
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success" type="submit">Search</Button>
             </Form>
           </Navbar.Collapse>
         </Container>

@@ -1,10 +1,10 @@
-/* ChatGPT Theme Colors */
+/* ChatGPT Dark Theme Colors - Pure Dark Version */
 :root {
-  /* Main Colors */
-  --bg-primary: #343541;
-  --bg-secondary: #444654;
-  --bg-sidebar: #202123;
-  --bg-input: #40414F;
+  /* Main Colors - Deep Dark */
+  --bg-primary: #0d0d0d;
+  --bg-secondary: #1a1a1a;
+  --bg-sidebar: #0d0d0d;
+  --bg-input: #2d2d2d;
   
   /* Text Colors */
   --text-primary: #ECECF1;
@@ -12,13 +12,13 @@
   --text-muted: #8E8EA0;
   
   /* Border & Divider */
-  --border-color: #565869;
-  --divider: #4D4D5C;
+  --border-color: #3d3d3d;
+  --divider: #2d2d2d;
   
-  /* Accent Colors */
-  --accent-primary: #10A37F;
-  --accent-hover: #0D8B6E;
-  --accent-secondary: #19C37D;
+  /* Accent Colors - Neutral Grays Only */
+  --accent-primary: #565869;
+  --accent-hover: #6d6d7d;
+  --accent-secondary: #4d4d5c;
   
   /* Status Colors */
   --error: #EF4444;
@@ -55,12 +55,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border-color);
+  background: #3d3d3d;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
+  background: #4d4d5c;
 }
 
 /* Common Styles */
