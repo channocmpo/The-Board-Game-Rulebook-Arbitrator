@@ -1,3 +1,163 @@
+/* Global ChatGPT Theme Overrides */
+body {
+  background-color: #343541 !important;
+  color: #ECECF1 !important;
+}
+
 main {
   min-height: 80vh;
+  background-color: #343541;
+}
+
+/* Bootstrap Component Overrides for ChatGPT Theme */
+.navbar {
+  background-color: #202123 !important;
+  border-bottom: 1px solid #565869;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ECECF1 !important;
+}
+
+.nav-link:hover {
+  color: #10A37F !important;
+}
+
+.bg-primary {
+  background-color: #444654 !important;
+}
+
+.card {
+  background-color: #444654 !important;
+  border: 1px solid #565869 !important;
+  color: #ECECF1 !important;
+}
+
+.card-title {
+  color: #ECECF1 !important;
+}
+
+.card-text {
+  color: #C5C5D2 !important;
+}
+
+.btn-primary {
+  background-color: #10A37F !important;
+  border-color: #10A37F !important;
+  color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #0D8B6E !important;
+  border-color: #0D8B6E !important;
+}
+
+.btn-light {
+  background-color: #40414F !important;
+  border-color: #565869 !important;
+  color: #ECECF1 !important;
+}
+
+.btn-light:hover {
+  background-color: #565869 !important;
+  color: #ECECF1 !important;
+}
+
+.btn-outline-success {
+  border-color: #10A37F !important;
+  color: #10A37F !important;
+}
+
+.btn-outline-success:hover {
+  background-color: #10A37F !important;
+  color: white !important;
+}
+
+.form-control {
+  background-color: #40414F !important;
+  border: 1px solid #565869 !important;
+  color: #ECECF1 !important;
+}
+
+.form-control::placeholder {
+  color: #8E8EA0 !important;
+}
+
+.form-control:focus {
+  background-color: #40414F !important;
+  border-color: #10A37F !important;
+  color: #ECECF1 !important;
+  box-shadow: 0 0 0 0.2rem rgba(16, 163, 127, 0.25) !important;
+}
+
+.badge {
+  background-color: #565869 !important;
+  color: #ECECF1 !important;
+}
+
+.text-muted {
+  color: #8E8EA0 !important;
+}
+
+.text-white {
+  color: #ECECF1 !important;
+}
+
+footer {
+  background-color: #202123 !important;
+  border-top: 1px solid #565869;
+  color: #C5C5D2 !important;
+}
+
+/* Links */
+a {
+  color: #19C37D !important;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #10A37F !important;
+  text-decoration: underline;
+}
+
+/* Form Labels */
+.form-label,
+.form-check-label {
+  color: #ECECF1 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #ECECF1 !important;
+}
+
+.lead {
+  color: #C5C5D2 !important;
+}
+
+.display-4 {
+  color: #ECECF1 !important;
+}
+
+/* Checkboxes and Radio Buttons */
+.form-check-input {
+  background-color: #40414F !important;
+  border-color: #565869 !important;
+}
+
+.form-check-input:checked {
+  background-color: #10A37F !important;
+  border-color: #10A37F !important;
+}
+
+.form-check-input:focus {
+  border-color: #10A37F !important;
+  box-shadow: 0 0 0 0.2rem rgba(16, 163, 127, 0.25) !important;
+}
+
+/* Shadows for cards */
+.shadow-sm {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
 }
