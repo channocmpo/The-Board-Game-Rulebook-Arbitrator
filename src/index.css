@@ -16,7 +16,8 @@ main {
 }
 
 /* Bootstrap Component Overrides for ChatGPT Theme */
-.navbar {
+.navbar,
+.custom-navbar {
   background-color: #0d0d0d !important;
   border-bottom: 1px solid #2d2d2d;
 }
@@ -173,4 +174,35 @@ h1, h2, h3, h4, h5, h6 {
 /* Shadows for cards */
 .shadow-sm {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+}
+/* Rules List Styling */
+.rules-list {
+  color: #ECECF1;
+}
+
+.rules-list h6 {
+  color: #ECECF1;
+  font-weight: 600;
+  border-bottom: 1px solid #2d2d2d;
+  padding-bottom: 8px;
+}
+
+.rules-list ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.rules-list li {
+  color: #C5C5D2;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.rules-list li:before {
+  content: "";
+  color: #565869;
+  position: absolute;
+  left: 0;
 }

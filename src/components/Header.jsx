@@ -20,7 +20,7 @@ function Header() {
   };
   return (
     <header>
-      <Navbar expand="lg" bg="primary" variant="dark" collapseOnSelect>
+      <Navbar expand="lg" variant="dark" collapseOnSelect className="custom-navbar">
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
             Rulebook Arbitrator
